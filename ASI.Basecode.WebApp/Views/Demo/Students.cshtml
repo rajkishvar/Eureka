@@ -1,11 +1,7 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
-<br />
-<br />
-<br />
-<br />
+﻿@page
+@model ASI.Basecode.WebApp.Views.Demo.StudentsModel
 <div class="w3-center">
+
     <h1>STUDENTS</h1>
 </div>
 <div>
@@ -22,13 +18,13 @@
             <td>19853050</td>
             <td>KARL</td>
             <td>DELFIN</td>
-            <td>BSIT</td>
-            <td>4</td>
+            <td>COURSE</td>
+            <td>LEVEL</td>
             <td>
                 <button onclick="updateStudent1('modal1','19853050','KARL','DELFIN','BSIT','4')" class="w3-button w3-hover-none w3-text-blue">&#9998;</button>
                 <button onclick="deleteStudent1()" class="w3-button w3-hover-none w3-text-red">&times;</button>
             </td>
-        </tr>
+        </tr> 
         <tr id="student2">
             <td>19853051</td>
             <td>RASTA</td>
@@ -41,14 +37,14 @@
             </td>
         </tr>
         <tr id="student3">
-            <td>19853052</td>
+            <td>19853050</td>
             <td>DOLOR</td>
             <td>PINO</td>
             <td>BSIT</td>
             <td>1</td>
             <td>
-                <button onclick="updateStudent3('modal3','19853052','DOLOR','PINO','BSIT','1')" class="w3-button w3-hover-none w3-text-blue" href="">&#9998;</button>
-                <button onclick="deleteStudent3()" class="w3-button w3-hover-none w3-text-red">&times;</button>
+                <button onclick="updateStudent3('modal3','19853050','DOLOR','PINO','BSIT','1')" class="w3-button w3-hover-none w3-text-blue" href="">&#9998;</button>
+                <button onclick="deleteStudent3()" class="w3-button w3-hover-none w3-text-red" href="">&times;</button>
             </td>
         </tr>
     </table>
@@ -103,7 +99,7 @@
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
-    function updateStudent1(modalID, idno, firstname, lastname, course, level) {
+    function updateStudent1(modalID, idno,firstname,lastname,course,level) { 
         $("#idno1").val(idno);
         $("#firstname1").val(firstname);
         $("#lastname1").val(lastname);
@@ -145,6 +141,6 @@
             $("#student3").hide();
         }
     }
-
-
+  
+   
 </script>
