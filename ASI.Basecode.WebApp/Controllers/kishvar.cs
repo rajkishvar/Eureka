@@ -2,7 +2,7 @@
 
 namespace ASI.Basecode.WebApp.Controllers
 {
-    public class HomeController : Controller
+    public class kishvar : Controller
     {
         public IActionResult Index()
         {
